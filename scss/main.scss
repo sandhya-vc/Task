@@ -1,0 +1,76 @@
+@import './variables';
+
+
+#container {
+    text-align: center;
+    height: 300%;
+    width:500px;
+    border: $container-border;
+    margin: auto;
+    @include mobile{
+        width: 300px;
+    }
+  }
+  
+  ul {
+    list-style-type: none;
+    margin: auto;
+    width: 500px;
+    height: 300px;
+    border-radius: 20px;
+  }
+  
+  li {
+    border: $li-border;
+    border-radius: 5px;
+    width: 400px;
+    background-color: $li-bgcolor;
+    height: 50px;
+    padding-top: 25px;
+    margin-top: 10px;
+    text-decoration: none;
+    position: relative;
+    font-weight:map-get($font-weights, bold );
+    font-size: large;
+  }
+  
+  
+  .close {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    right: 0%;
+    padding: 12px 16px;
+    transform: translate(0%, -50%);
+    font-size: 20px;
+  }
+  
+  .close:hover {
+    font-size: 30px;
+    color: red;
+  }
+  
+  #input {
+    padding-left: 20px;
+    margin: 30px;
+    width: 220px;
+    height: 30px;
+    border: $input-border;
+    font-weight:map-get($font-weights, bold );
+  }
+  
+  .done {
+    text-decoration: line-through;
+    color: gray;
+  }
+
+
+  @mixin mobile {
+    @media  (max-width:700px) 
+    // only screen and
+    {
+     @content;
+    }
+
+  }
+ 

@@ -1,0 +1,58 @@
+#container {
+  text-align: center;
+  height: 300%;
+  width: 500px;
+  border: 10px solid gainsboro;
+  margin: auto;
+}
+
+ul {
+  list-style-type: none;
+  margin: auto;
+  width: 500px;
+  height: 300px;
+  border-radius: 20px;
+}
+
+li {
+  border: 1px solid gainsboro;
+  border-radius: 5px;
+  width: 400px;
+  background-color: #fff;
+  height: 50px;
+  padding-top: 25px;
+  margin-top: 10px;
+  text-decoration: none;
+  position: relative;
+  font-weight: 700;
+  font-size: large;
+}
+
+.close {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  right: 0%;
+  padding: 12px 16px;
+  transform: translate(0%, -50%);
+  font-size: 20px;
+}
+
+.close:hover {
+  font-size: 30px;
+  color: red;
+}
+
+#input {
+  padding-left: 20px;
+  margin: 30px;
+  width: 220px;
+  height: 30px;
+  border: 2px solid brown;
+  font-weight: 700;
+}
+
+.done {
+  text-decoration: line-through;
+  color: gray;
+}/*# sourceMappingURL=main.css.map */
